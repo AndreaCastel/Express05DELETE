@@ -51,3 +51,7 @@ app.put("/api/users", validateUser, users.putUsers);
 
 
 app.use(express.json());
+
+
+app.delete("/api/movies/:id", movieHandlers.deleteMovie);
+app.delete("/api/users/:id", users.deleteUsers);
